@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<button class="btn reset">🔄 new game</button>
+				<button class="btn roll">🎲 roll dice</button>
+				<button class="btn hold">📥 hold</button>
+				<img src="./resources/1.png" alt="" class="dice__image" />
+
+				<section class="left">
+					<h1>player 1</h1>
+					<h2 id="__0">0</h2>
+					<div class="current">
+						<p>current</p>
+						<p class="current__score">0</p>
+					</div>
+				</section>
+
+				<section class="right">
+					<h1>player 1</h1>
+					<h2 id="__1">0</h2>
+					<div class="current">
+						<p>current</p>
+						<p class="current__score">0</p>
+					</div>
+				</section>
+			</div>
+
+			<div class="winner">
+				<button>✖️</button>
+				<h1>player <span></span> won</h1>
+				<img src="./resources/firework1.gif" alt="" />
+			</div>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>

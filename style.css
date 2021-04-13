@@ -1,0 +1,150 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #000;
+}
+
+.container {
+	position: relative;
+	margin: 15vh 0;
+	width: 100%;
+	padding: 100px;
+	background-image: linear-gradient(to right, #a1164b, #880039);
+}
+
+.btn {
+	position: absolute;
+	padding: 10px 20px;
+	font-size: 0.8rem;
+	border: none;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 30px;
+}
+
+.dice__image {
+	width: 100px;
+	background-color: #fff;
+	border-radius: 13px;
+	position: absolute;
+	top: 6rem;
+}
+
+.reset {
+	top: 2rem;
+}
+
+.roll {
+	bottom: 7rem;
+}
+
+.hold {
+	bottom: 3rem;
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: max-content;
+	border-radius: 10px;
+	box-shadow: 0px 20px 100px #330202;
+}
+
+.left,
+.right {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 3rem 8rem;
+	background-color: #b36086;
+}
+
+.left {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.right {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.active {
+	background-color: #ffa2cd;
+}
+
+section h1 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+
+section h2 {
+	font-size: 3.5rem;
+	font-weight: 400;
+	color: #c70000;
+	margin-bottom: 8rem;
+}
+
+.current {
+	background-color: #ca1919;
+	color: #ffff;
+	padding: 1rem 3rem;
+	border-radius: 10px;
+}
+
+.current p {
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+p.current__score {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.winner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	z-index: 2;
+}
+
+.winner h1 {
+	width: 580px;
+	font-size: 3rem;
+	padding: 2rem;
+	text-align: center;
+	background-color: #000;
+}
+
+.winner button {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 30px;
+	cursor: pointer;
+}
